@@ -18,7 +18,7 @@
 
     body {
       font-family: 'Montserrat', sans-serif;
-      color: darkgreen;
+      color: rgb(0, 84, 80);
       background-color: white;
       line-height: 1.6;
     }
@@ -82,6 +82,7 @@
       opacity: 0; /* Initially hidden */
       transform: translateY(20px); /* Slightly offset for smooth animation */
       transition: opacity 1.5s ease, transform 1.5s ease; /* Smooth transition */
+      display: flex;
       
     }
 
@@ -91,6 +92,7 @@
       margin-bottom: 20px;
       color: red;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      display: flex;
     }
 
     .hero-section p {
@@ -99,13 +101,14 @@
       line-height: 1.5;
       margin: 0 auto 4rem;
       text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+      display: flex;
     }
 
     .cta-button {
       margin-top: 1.5rem;
       padding: 0.75rem 2rem;
       font-size: 1rem;
-      color: rgb(0, 62, 22);
+      color: rgb(0, 0, 0);
       background-color: rgb(255, 255, 255);
       border: none;
       border-radius: 5px;
@@ -115,30 +118,14 @@
     }
 
     .cta-button:hover {
-      background-color: rgb(0, 62, 22);
+      background-color: rgb(0, 0, 0);
       color: white;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .hero-section h1 {
-        font-size: 3rem;
-      }
-
-      .hero-section p {
-        font-size: 1rem;
-      }
-
-      .cta-button {
-        font-size: 0.9rem;
-        padding: 0.5rem 1.5rem;
-      }
     }
 
     @media (max-width: 768px) { /* Target devices with a screen width of 768px or less */
   .hero-content {
     border: 5px solid;
-    color: transparent; /* Adjust color, thickness, and style as needed */
+    border-color: transparent; /* Adjust color, thickness, and style as needed */
     padding: 20px; /* Add some space inside the border for better aesthetics */
     border-radius: 20px; /* Optional: Adds rounded corners */
     align-items: center;
@@ -153,6 +140,10 @@
     color: white;
     text-align: center;
   }
+  .cta-button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1.5rem;
+      }
 }
   </style>
 </head>
@@ -166,7 +157,7 @@
   <section class="hero-section">
     <!-- Video Background -->
     <video class="hero-video" autoplay muted loop playsinline>
-      <source src="Images/Background video.mp4" type="video/mp4">
+      <source src="Images/Background video.mp4" type="video/mp4" alt="hacker typing messages on a computer">
       Your browser does not support the video tag.
     </video>
 
