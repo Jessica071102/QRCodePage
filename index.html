@@ -82,6 +82,7 @@
       opacity: 0; /* Initially hidden */
       transform: translateY(20px); /* Slightly offset for smooth animation */
       transition: opacity 1.5s ease, transform 1.5s ease; /* Smooth transition */
+      
     }
 
     .hero-section h1 {
@@ -133,6 +134,14 @@
         padding: 0.5rem 1.5rem;
       }
     }
+
+    @media (max-width: 768px) { /* Target devices with a screen width of 768px or less */
+  .text {
+    border: 2px solid rgb(0, 84, 80); /* Adjust color, thickness, and style as needed */
+    padding: 10px; /* Add some space inside the border for better aesthetics */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+  }
+}
   </style>
 </head>
 <body>
@@ -151,7 +160,7 @@
 
     <!-- Content -->
     <div class="hero-content">
-      <h1>DATA <br> LEAKAGE</h1>
+      <h1>DATA LEAKAGE</h1>
       <p>You’ve just been hacked. <br>This is how easy it could have been, if this was a real cyber attack. 
         <br>
         <br> Learn how to spot the signs and stop phishing attacks from happening to you!</p>
