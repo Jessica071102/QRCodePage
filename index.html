@@ -45,7 +45,6 @@
     /* Hero Section */
     .hero-section {
       height: 100vh;
-      display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -82,7 +81,6 @@
       opacity: 0; /* Initially hidden */
       transform: translateY(20px); /* Slightly offset for smooth animation */
       transition: opacity 1.5s ease, transform 1.5s ease; /* Smooth transition */
-      display: flex;
       
     }
 
@@ -92,7 +90,6 @@
       margin-bottom: 20px;
       color: red;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-      display: flex;
     }
 
     .hero-section p {
@@ -101,7 +98,6 @@
       line-height: 1.5;
       margin: 0 auto 4rem;
       text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-      display: flex;
     }
 
     .cta-button {
@@ -156,8 +152,8 @@
 
   <section class="hero-section">
     <!-- Video Background -->
-    <video class="hero-video" autoplay muted loop playsinline>
-      <source src="Images/Background video.mp4" type="video/mp4" alt="hacker typing messages on a computer">
+    <video class="hero-video" autoplay muted loop playsinline aria-label="Hacker typing messages on a computer"></video>>
+      <source src="Images/Background video.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
 
